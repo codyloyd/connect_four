@@ -28,7 +28,7 @@ class ConnectFour
 	def game_over?
 		@game_array.each_with_index do |ary,index|
 			#tests for horizontal win
-			3.times do |i|
+			4.times do |i|
 				if ary[i,4] == ["X","X","X","X"] || ary[i,4] == ["O","O","O","O"]
 					return true
 				end
